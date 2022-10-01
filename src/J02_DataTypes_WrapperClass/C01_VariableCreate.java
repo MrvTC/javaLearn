@@ -1,0 +1,44 @@
+package J02_DataTypes_WrapperClass;
+
+public class C01_VariableCreate {
+    public static void main(String[] args) {
+        // variable create(Değişken oluşturmak) için..
+        // 1- Datatype(Değişken türü) VariableName(Değişken ismi) "=" value(değişken değeri) ";"
+        //  int yas = 48 ;
+        //  Declaration(Tanımlama)= Assaignment(Atama)
+
+        //1. yol-> best practice(Recommended) tavsiye eilen..
+        int yas=48;
+        int maas=108000;
+        System.out.println(yas);//48
+        System.out.println(maas);// 108A000
+        System.out.println("yasınız : "+yas);//yasınız : 48
+        System.out.println(maas);//108000
+        System.out.println("maasınız :"+maas);//maasınız : 108000
+
+        //2. yol->
+        int boy;// variable declaration -> değişken tanımlama
+        //KING of TRICK :)
+        //System.out.println(boy);// değer ataması ya pılmadan bir variable herhangi bir işlem(axion)a alınamaz CTE
+        boy=190; // variable value assaignment -> değişkene değer ataması
+        System.out.println("boyunuz: " +boy);//boyunuz: 190
+
+        //3 .yol->
+        int age,yevmiye,kilo;//Aynı data türünde birden fazla variable tek komutla declare edilebilir.
+        age=33; //5- Aynı data türünde birden fazla variable tek komutla declare edilip değer atanabilir.
+        kilo=99; //tanımlanan değişkenlere değer ataması yapıldı.
+        yevmiye=1000;
+
+        /*
+        Bir variable declare edildikten sonra istenildiği kadar değer dğiştirilebilir
+         */
+        age=40;
+        System.out.println("yeni age : "+age);//yeni age : 40
+        /*
+       CISS :(  variable declare edildikten sonra tekrar declare EDİLMEZZZ ->CTE
+         */
+        // int age; -> dublicate variable declaration CTE
+
+    }
+}
+
